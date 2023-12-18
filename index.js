@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const modal = document.querySelector(".modal");
     const no = document.querySelector(".no");
     const noResult = document.querySelector(".middle");
-
+    const loader = document.querySelector(".loader");
     enter.onclick = modalShow;
     no.onclick = modalClose;
 
@@ -16,4 +16,11 @@ document.addEventListener("DOMContentLoaded", function () {
         noResult.classList.add("noResult");
 
     }
+
+    function myFunction() {
+        loader.classList.add("loaded")
+    }
+
+    window.addEventListener("load", myFunction);
+
 });
